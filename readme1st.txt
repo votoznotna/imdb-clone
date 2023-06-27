@@ -3,3 +3,5 @@ antonzotov
 antonzotov@hotmail.com
 https://www.themoviedb.org/settings/api
 https://loading.io/ to get the loading assets
+https://github.com/tailwindlabs/tailwindcss-line-clamp/
+
