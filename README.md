@@ -20,6 +20,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Deploy on Vercel
 
-```
-https://img-clone.vercel.app/
-```
+[imdb-clone-five-ochre](https://imdb-clone-five-ochre.vercel.app/)
