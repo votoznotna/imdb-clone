@@ -1,6 +1,8 @@
 import Results from "@/components/Results";
+import { timeout } from "@/utils";
 
 export default async function SearchPage({ params }) {
+  await timeout(500);
   const res = await fetch(
     `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${params.searchTerm}&language=en-US&include_adult=false`
   );

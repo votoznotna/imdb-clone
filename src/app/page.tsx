@@ -5,6 +5,7 @@
 export const dynamic = "force-dynamic"; // this is the fix
 
 import Results from "@/components/Results";
+import { timeout } from "@/utils";
 
 const API_KEY = process.env.API_KEY;
 
@@ -14,7 +15,7 @@ interface Props {
 
 export default async function Home({ searchParams }: Props) {
   const genre = searchParams.genre || "fetchTrending";
-
+  await timeout(500);
   const res = await fetch(
     `https://api.themoviedb.org/3/${
       genre === "fetchTopRated" ? "movie/top_rated" : "trending/all/week"

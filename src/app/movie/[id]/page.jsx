@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { timeout } from "@/utils";
 
 async function getMovie(movieId) {
   const res = await fetch(
@@ -9,6 +10,7 @@ async function getMovie(movieId) {
 
 export default async function MoviePage({ params }) {
   const movieId = params.id;
+  await timeout(500);
   const movie = await getMovie(movieId);
   return (
     <div className="w-full">
